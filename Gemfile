@@ -39,3 +39,12 @@ gem 'spring',        group: :development
 # gem 'debugger', group: [:development, :test]
 
 gem 'paypal-express'
+
+group :development do
+  #for debugging purposes
+  gem 'pry-rails'
+
+  #so that generating new views and such default to haml
+  gem 'haml-rails'
+end
+

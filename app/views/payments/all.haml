@@ -1,0 +1,19 @@
+%table
+  %tr
+    %th
+      Payment ID
+    %th
+      Amount
+    %th
+      Processed at
+  - @all_payments.each do |p|
+    %tr
+      %td
+        = p.id
+      %td
+        = "$#{p.amount}"
+      %td
+        = p.updated_at
+
+
+
